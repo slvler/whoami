@@ -2,6 +2,7 @@
 
 namespace Slvler\Whoami;
 
+use Illuminate\Container\Container;
 use Illuminate\Support\ServiceProvider;
 
 class WhoamiServiceProvider extends ServiceProvider
@@ -12,15 +13,13 @@ class WhoamiServiceProvider extends ServiceProvider
     public function boot()
     {
     }
-
     /**
      * Register the application services.
      */
     public function register()
     {
-        $this->app->bind('whoami', function ($app) {
-            return new WhoamiManager($app);
+        $this->app->bind('whoami', function () {
+            return new WhoamiManager();
         });
     }
-
 }

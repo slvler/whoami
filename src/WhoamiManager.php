@@ -2,19 +2,15 @@
 
 namespace Slvler\Whoami;
 
-use slvler\whoami\Api\WhoamiClient;
+use Slvler\Whoami\Api\WhoamiClient;
 
 class WhoamiManager
 {
-    public function __construct($app)
-    {
-
-    }
-
-    protected function createIpApi()
+    public function __construct()
+    {}
+    public function get($ip)
     {
         $client = new WhoamiClient();
-
-        return new Whoami($client);
+        return new Whoami($client, $ip);
     }
 }

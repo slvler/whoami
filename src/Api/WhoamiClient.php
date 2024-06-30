@@ -4,16 +4,20 @@ namespace Slvler\Whoami\Api;
 
 use Illuminate\Support\Facades\Http;
 
+use GuzzleHttp\Client;
+
 class WhoamiClient implements IWhoami
 {
-    private $client;
-    public function __construct(?Http $client = null)
+    private Client $httpClient;
+    public function __construct(?Client $client = null)
     {
-        $this->client = $client ?? $this->buildClient();
-    }
+        $this->httpClient = new Client(
+            ['base_uri' => 'http://ip-api.com/json/']
+        );
 
-    private function buildClient()
+    }
+    public function getHttpClient(): Client
     {
-        return new Http();
+        return $this->httpClient;
     }
 }
