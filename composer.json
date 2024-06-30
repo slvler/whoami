@@ -1,0 +1,25 @@
+{
+    "name": "slvler/whoami",
+    "license": "MIT",
+    "require": {
+        "illuminate/support": "^10.0.1"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Slvler\\Whoami\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Slvler\\Whoami\\WhoamiServiceProvider"
+            ],
+            "aliases": {
+                "Whoami": "Slvler\\Whoami\\Facades\\WhoamiFacade"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
