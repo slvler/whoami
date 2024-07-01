@@ -18,6 +18,22 @@ To install this package tou can use composer:
 ```bash
     composer require slvler/whoami
 ```
+
+## Usage
+
+### Import the facade in your class.
+```php
+use Whoami;
+```
+### send a request to get ip information details
+```php
+Whoami::get("46.2.138.34")->result();
+```
+### send a request to filter some details in the ip information
+```php
+Whoami::get("46.2.138.34")->filter(['status','message','country','zip','query'])->result();
+```
+
 ## Credits
 -   [slvler](https://github.com/slvler)
 ## License
