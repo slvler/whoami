@@ -1,5 +1,6 @@
 # slvler - Ip-api Service
 
+[![tests](https://github.com/slvler/whoami/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/whoami/actions/workflows/tests.yml)
 [![Latest Stable Version](http://poser.pugx.org/slvler/whoami/v)](https://packagist.org/packages/slvler/whoami)
 [![Latest Unstable Version](http://poser.pugx.org/slvler/whoami/v/unstable)](https://packagist.org/packages/slvler/whoami) 
 [![License](http://poser.pugx.org/slvler/whoami/license)](https://packagist.org/packages/slvler/whoami) 
