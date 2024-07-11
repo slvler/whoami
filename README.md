@@ -9,7 +9,7 @@ This package provides a convenient wrapper to the [Ip API](https://ip-api.com/do
 ## Requirements
 
 - PHP 8.0+
-- Laravel 10.x
+- Laravel 10.x | 9.x
 
 ## Installation
 
@@ -34,6 +34,10 @@ Whoami::get("46.2.138.34")->result();
 Whoami::get("46.2.138.34")->filter(['status','message','country','zip','query'])->result();
 ```
 
+### Testing
+```bash
+    composer test
+```
 ## Credits
 -   [slvler](https://github.com/slvler)
 ## License
