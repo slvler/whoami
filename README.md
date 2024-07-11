@@ -28,11 +28,11 @@ use Whoami;
 ```
 ### send a request to get ip information details
 ```php
-Whoami::get("46.2.138.34")->result();
+Whoami::get("127.0.0.1")->result();
 ```
 ### send a request to filter some details in the ip information
 ```php
-Whoami::get("46.2.138.34")->filter(['status','message','country','zip','query'])->result();
+Whoami::get("127.0.0.1")->filter(['status','message','country','zip','query'])->result();
 ```
 
 ### Testing
